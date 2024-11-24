@@ -1,5 +1,5 @@
 .login-container {
-    display: flex !important;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -84,7 +84,7 @@
 }
 
 .img-container {
-    width: 40vw;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
