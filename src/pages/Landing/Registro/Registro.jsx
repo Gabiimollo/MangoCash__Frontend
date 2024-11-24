@@ -7,6 +7,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import Loader from '../../../Components/Loader/Loader'
 import FetchConstants from '../../../../src/Constants/FetchConstants'
 
+import FormularioPNG from '../../../../public/assets/Landing/Images/LoginRegistro/formulario.png'
+
 const Registro = () => {
     const navigate = useNavigate();
 
@@ -78,7 +80,7 @@ const Registro = () => {
 
 
             <div className="img-container">
-                <img className="img" src="./src/assets/Landing/Images/LoginRegistro/formulario.png" alt="formulario-Img" />
+                <img className="img" src={FormularioPNG} alt="formulario-Img" />
             </div>
 
             <div className="form-container">

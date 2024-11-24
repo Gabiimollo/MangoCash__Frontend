@@ -2,27 +2,30 @@ import { Link } from "react-router-dom";
 import React from "react";
 import "./SobreNosotros.css";
 
+import FinanzasPersonalesPNG from '../../../../public/assets/Landing/Images/SobreNosotros/FinanzasPersonales.png'
+import VisionPNG from '../../../../public/assets/Landing/Images/SobreNosotros/Vision.png'
+import MisionPNG from '../../../../public/assets/Landing/Images/SobreNosotros/Mision.png'
+import FlagPNG from '../../../../public/assets/Landing/Images/SobreNosotros/Flag.png'
+import TransparenciaPNG from '../../../../public/assets/Landing/Images/SobreNosotros/Transparencia.png'
+import AccesoPNG from '../../../../public/assets/Landing/Images/SobreNosotros/Acceso.png'
+import GraduacionPNG from '../../../../public/assets/Landing/Images/SobreNosotros/Graduacion.png'
+import LinkedInPNG from '../../../../public/assets/Landing/Images/SobreNosotros/LinkedIn.png'
+
 const people = [
   {
     name: "Juan Gabriel Mollo",
     role: "Desarrollador Full Stack",
     imageUrl:
-      "./src/assets/Landing/Images/SobreNosotros/FotosPerfil/Gabriel_Mollo.jpg",
+      "./public/assets/Landing/Images/SobreNosotros/FotosPerfil/Gabriel_Mollo.jpg",
     linkedin: "https://www.linkedin.com/in/juangabrielmollo/",
   },
   {
     name: "Santiago Friedrich",
     role: "Desarrollador Full Stack",
     imageUrl:
-      "./src/assets/Landing/Images/SobreNosotros/FotosPerfil/Santiago_Friedrich.jpeg",
+      "./public/assets/Landing/Images/SobreNosotros/FotosPerfil/Santiago_Friedrich.jpeg",
     linkedin: "https://www.linkedin.com/in/santiago-claros-friedrich/",
   },
-  // {
-  //   name: "Valentina Romero",
-  //   role: "Tester QA",
-  //   imageUrl: "./src/assets/Landing/Images/SobreNosotros/FotosPerfil/valen.png",
-  //   linkedin: "https://www.linkedin.com/in/valentinaromero2003/",
-  // },
 ];
 
 function About() {
@@ -46,7 +49,7 @@ function About() {
           <div class="column-right">
             <img
               class="hero-img-about"
-              src="./src/assets/Landing/Images/SobreNosotros/FinanzasPersonales.png"
+              src={FinanzasPersonalesPNG}
               alt="finanzas-personales"
             />
           </div>
@@ -58,7 +61,7 @@ function About() {
           <div className="container-left-about">
             <img
               class="hero-img-about"
-              src="./src/assets/landing/images/sobrenosotros/Vision.png"
+              src={VisionPNG}
               alt=""
             />
           </div>
@@ -83,7 +86,7 @@ function About() {
           <div className="container-right-about">
             <img
               class="hero-img-about"
-              src="./src/assets/landing/images/sobrenosotros/Mision.png"
+              src={MisionPNG}
               alt=""
             />
           </div>
@@ -97,7 +100,7 @@ function About() {
             <div className="about-card">
               <img
                 class="about-img"
-                src="./src/assets/Landing/Images/SobreNosotros/Flag.png"
+                src={FlagPNG}
               />
               <h3 className="h3-about">Innovacion</h3>
               <p className="p-v2-about">
@@ -108,7 +111,7 @@ function About() {
             <div className="about-card">
               <img
                 class="about-img"
-                src="./src/assets/Landing/Images/SobreNosotros/Transparencia.png"
+                src={TransparenciaPNG}
               />
               <h3 className="h3-about">Transparencia</h3>
               <p className="p-v2-about">
@@ -119,7 +122,7 @@ function About() {
             <div className="about-card">
               <img
                 class="about-img"
-                src="./src/assets/Landing/Images/SobreNosotros/Acceso.png"
+                src={AccesoPNG}
               />
               <h3 className="h3-about">Accesibilidad</h3>
               <p className="p-v2-about">
@@ -130,7 +133,7 @@ function About() {
             <div className="about-card">
               <img
                 class="about-img"
-                src="./src/assets/Landing/Images/SobreNosotros/Graduacion.png"
+                src={GraduacionPNG}
               />
               <h3 className="h3-about">Educacion</h3>
               <p className="p-v2-about">
@@ -169,7 +172,7 @@ function About() {
                         rel="noopener noreferrer"
                       >
                         <img
-                          src="./src/assets/Landing/Images/SobreNosotros/LinkedIn.png"
+                          src={LinkedInPNG}
                           alt="LinkedIn"
                           className="linkedin-icon"
                         />

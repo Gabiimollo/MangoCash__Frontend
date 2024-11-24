@@ -6,6 +6,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import Loader from '../../../Components/Loader/Loader'
 import FetchConstants from '../../../../src/Constants/FetchConstants'
 
+import AutenticacionPNG from '../../../../public/assets/Landing/Images/LoginRegistro/autenticacion.png'
+
 function Login() {
   const [loginData, setLoginData] = useState({
     email: '',
@@ -102,7 +104,7 @@ function Login() {
       <div className="img-container">
         <img
           className="img"
-          src="./src/assets/Landing/Images/LoginRegistro/autenticacion.png"
+          src={AutenticacionPNG}
           alt="autenticacion"
         />
       </div>

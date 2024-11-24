@@ -1,5 +1,8 @@
 import React from 'react'
 
+import calcuPNG from '../../../../public/assets/Landing/Images/PorqueElegirnos/Calculadora.png'
+import TruenoIconPNG from '../../../../public/assets/Landing/Images/PorqueElegirnos/TruenoIcon.png'
+import LibroIconPNG from '../../../../public/assets/Landing/Images/PorqueElegirnos/LibroIcon.png'
 function PorqueElegirnos() {
   return (
     <div>
@@ -15,7 +18,7 @@ function PorqueElegirnos() {
           </div>
 
           <div className="column-right">
-            <img className="hero-img-about" src="./src/assets/Landing/Images/PorqueElegirnos/Calculadora.png" alt=""/>
+            <img className="hero-img-about" src={calcuPNG} alt=""/>
           </div>
         </div>
       </section>
@@ -28,12 +31,12 @@ function PorqueElegirnos() {
 
       <div className="container-row-about">
         <div className="container-left-about">
-          <img className="about-img" src="./src/assets/Landing/Images/PorqueElegirnos/TruenoIcon.png" />
+          <img className="about-img" src={TruenoIconPNG} />
           <h3 className='h3-about'>Gestion eficiente</h3>
           <p className='p-v2-about'>Te ofrecemos analisis detallado y funciones intuitivas para una experiencia facil y precisa. Te ayudamos a tomar mejores decisiones financieras.</p>
         </div>
         <div className="container-right-about">
-          <img className="about-img" src="../src/assets/Landing/Images/PorqueElegirnos/LibroIcon.png" />
+          <img className="about-img" src={LibroIconPNG} />
           <h3 className='h3-about'>Educación Financiera</h3>
           <p className='p-v2-about'>Tu educación nos importa. A medida que aprendes mas sobre el manejo de tu dinero, tendrás una mejor visión de tus finanzas y como optimizarlas. Nuestro blog te acompaña en cada paso del proceso.</p>
         </div>

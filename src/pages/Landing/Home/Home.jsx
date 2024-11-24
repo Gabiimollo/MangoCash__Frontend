@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import DashboardPNG from "../../../../public/assets/Landing/Images/Home/Dashboard.png";
-import OnlinePaymentPNG from "../../../../public/assets/Landing/Images/Home/OnlinePayments.png"
+import OnlinePaymentPNG from "../../../../public/assets/Landing/Images/Home/OnlinePayment.png"
 import PayPalPNG from "../../../../public/assets/Landing/Images/Home/PayPal.png";
 import FinanceAppPNG from "../../../../public/assets/Landing/Images/Home/FinanceApp.png"
 import PersonalFinancePNG from "../../../../public/assets/Landing/Images/Home/PersonalFinance.png"
