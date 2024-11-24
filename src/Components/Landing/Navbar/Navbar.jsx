@@ -2,12 +2,14 @@ import './Navbar.css'
 import { Link } from 'react-router-dom'
 import React from 'react'
 
+import logoMangoCash from '../../../../public/assets/Landing/Logo_MangoCash.png'
+
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-left">
         <Link to={"/"} >
-          <img className="navbar-logo" src="./src/assets/Landing/Logo_MangoCash.png" alt="logo-mangocash" />
+          <img className="navbar-logo" src={logoMangoCash} alt="logo-mangocash" />
         </Link>  
       </div>
 
