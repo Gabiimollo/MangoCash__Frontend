@@ -10,7 +10,7 @@ const LandingLayout = () => {
     <header>
       <Navbar />
     </header>
-    <main>
+    <main className="display-flex">
       <Outlet />
     </main>
     <footer>

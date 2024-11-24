@@ -67,6 +67,7 @@ function Login() {
 
   return (
     <>
+    <div>
       <div className="login-container">
         {showLoader && <Loader textCard="Iniciando sesión..." />}
 
@@ -122,6 +123,7 @@ function Login() {
           pauseOnHover
         />
       </div>
+    </div>
     </>
   );
 }
