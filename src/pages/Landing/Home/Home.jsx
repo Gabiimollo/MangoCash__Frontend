@@ -2,6 +2,12 @@ import "./Home.css";
 import React from "react";
 import { Link } from "react-router-dom";
 
+import DashboardPNG from "../../../../public/assets/Landing/Images/Home/Dashboard.png";
+import OnlinePaymentPNG from "../../../../public/assets/Landing/Images/Home/OnlinePayments.png"
+import PayPalPNG from "../../../../public/assets/Landing/Images/Home/PayPal.png";
+import FinanceAppPNG from "../../../../public/assets/Landing/Images/Home/FinanceApp.png"
+import PersonalFinancePNG from "../../../../public/assets/Landing/Images/Home/PersonalFinance.png"
+
 function Home() {
   return (
     <div>
@@ -26,7 +32,7 @@ function Home() {
           <div className="column-right">
             <div className="container-image">
               <img
-                src="./src/assets/Landing/Images/Home/Dashboard.png"
+                src={DashboardPNG}
                 alt="dashboard-img"
               />
             </div>
@@ -42,7 +48,7 @@ function Home() {
         <div className="why-cards">
           <div className="card">
             <img
-              src="./src/assets/Landing/Images/Home/OnlinePayment.png"
+              src={OnlinePaymentPNG}
               alt="payment"
             />
             <h3>Seguimiento en tiempo real</h3>
@@ -53,7 +59,7 @@ function Home() {
           </div>
           <div className="card">
             <img
-              src="./src/assets/Landing/Images/Home/PayPal.png"
+              src={PayPalPNG}
               alt="multiple_accounts"
             />
             <h3>Gestione múltiples cuentas</h3>
@@ -64,7 +70,7 @@ function Home() {
           </div>
           <div className="card">
             <img
-              src="./src/assets/Landing/Images/Home/FinanceApp.png"
+              src={FinanceAppPNG}
               alt="analisis"
             />
             <h3>Análisis personalizado</h3>
@@ -92,7 +98,7 @@ function Home() {
 
             <div className="why-right">
               <img
-                src="./src/assets/Landing/Images/Home/PersonalFinance.png"
+                src={PersonalFinancePNG}
                 alt=""
               />
             </div>
