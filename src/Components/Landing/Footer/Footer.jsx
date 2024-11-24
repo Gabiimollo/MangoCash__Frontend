@@ -1,7 +1,7 @@
 import './Footer.css'
 import { Link } from 'react-router-dom'
 import React from 'react'
-import logoConNombre from '../../../assets/Landing/logo-nombre.png'
+import logoConNombre from '../../../../public/assets/Landing/logo-nombre.png'
 
 function Footer() { 
   return (
