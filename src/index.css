@@ -42,3 +42,10 @@ li {
     --blanco: #F7F7F7;
     --negro: #323030;
 }
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

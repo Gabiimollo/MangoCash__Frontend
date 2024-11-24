@@ -20,12 +20,11 @@ const App = () => {
           <Route path="/sobre_nosotros" element={<SobreNosotros />} />
           <Route path="/porque_elegirnos" element={<PorqueElegirnos />} />
           <Route path="/ayuda" element={<Ayuda />} />
-        </Route>
-
-        {/* Rutas con el layout Registro/Login */}
-        <Route element={<RegistroLoginLayout />}>
-          <Route path="/registro" element={<Registro />} />
-          <Route path="/login" element={<Login />} />
+          
+          <Route element={<RegistroLoginLayout />}>
+            <Route path="/registro" element={<Registro />} />
+            <Route path="/login" element={<Login />} />
+          </Route>
         </Route>
       </Routes>
     </Router>

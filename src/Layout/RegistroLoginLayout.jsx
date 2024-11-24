@@ -3,7 +3,7 @@ import { Link, Outlet } from 'react-router-dom';
 
 import LogoNombreMangoCash from '../../public/assets/Landing/logo-nombre.png'
 
-const RegistroLoginLayout = ({ children }) => {
+const RegistroLoginLayout = () => {
   return (
     <>
       <header>
@@ -12,9 +12,7 @@ const RegistroLoginLayout = ({ children }) => {
         </Link>
       </header>
       <main>
-        <div style="display: flex;">
-          <Outlet />
-        </div>
+        <Outlet />
       </main>
     </>
   );
