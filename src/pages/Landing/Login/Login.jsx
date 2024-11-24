@@ -66,61 +66,63 @@ function Login() {
   };
 
   return (
-    <div className="login-container">
-      {showLoader && <Loader textCard="Iniciando sesión..." />}
+    <>
+      <div className="login-container">
+        {showLoader && <Loader textCard="Iniciando sesión..." />}
 
-      <div className="form-container">
-        <h2 className="h2-login">Iniciar Sesión</h2>
+        <div className="form-container">
+          <h2 className="h2-login">Iniciar Sesión</h2>
 
-        <form className="form-login" onSubmit={handleSubmit}>
-          <label className="form-label-login" htmlFor="email">Dirección de e-mail</label>
-          <input
-            className="form-input-login"
-            type="email"
-            name="email"
-            value={loginData.email}
-            onChange={handleChange}
+          <form className="form-login" onSubmit={handleSubmit}>
+            <label className="form-label-login" htmlFor="email">Dirección de e-mail</label>
+            <input
+              className="form-input-login"
+              type="email"
+              name="email"
+              value={loginData.email}
+              onChange={handleChange}
+            />
+
+            <div className="container-label-contraseña">
+              <label className="form-label-login" htmlFor="password">Contraseña</label>
+              <a className="form-a-login" href="#">¿Olvidaste la contraseña?</a>
+            </div>
+
+            <input
+              className="form-input-login"
+              type="password"
+              name="password"
+              value={loginData.password}
+              onChange={handleChange}
+            />
+
+            <button className="form-button" type="submit" disabled={status === 'loading'}>
+              {status === 'loading' ? 'Iniciando sesión...' : 'Iniciar sesión'}
+            </button>
+          </form>
+        </div>
+
+        <div className="img-container">
+          <img
+            className="img"
+            src={AutenticacionPNG}
+            alt="autenticacion"
           />
+        </div>
 
-          <div className="container-label-contraseña">
-            <label className="form-label-login" htmlFor="password">Contraseña</label>
-            <a className="form-a-login" href="#">¿Olvidaste la contraseña?</a>
-          </div>
-
-          <input
-            className="form-input-login"
-            type="password"
-            name="password"
-            value={loginData.password}
-            onChange={handleChange}
-          />
-
-          <button className="form-button" type="submit" disabled={status === 'loading'}>
-            {status === 'loading' ? 'Iniciando sesión...' : 'Iniciar sesión'}
-          </button>
-        </form>
-      </div>
-
-      <div className="img-container">
-        <img
-          className="img"
-          src={AutenticacionPNG}
-          alt="autenticacion"
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
         />
       </div>
-
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
-    </div>
+    </>
   );
 }
 
