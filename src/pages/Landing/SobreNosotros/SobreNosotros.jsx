@@ -16,14 +16,14 @@ const people = [
     name: "Juan Gabriel Mollo",
     role: "Desarrollador Full Stack",
     imageUrl:
-      "./public/assets/Landing/Images/SobreNosotros/FotosPerfil/Gabriel_Mollo.jpg",
+      "../../../../public/assets/Landing/Images/SobreNosotros/FotosPerfil/Gabriel_Mollo.jpg",
     linkedin: "https://www.linkedin.com/in/juangabrielmollo/",
   },
   {
     name: "Santiago Friedrich",
     role: "Desarrollador Full Stack",
     imageUrl:
-      "./public/assets/Landing/Images/SobreNosotros/FotosPerfil/Santiago_Friedrich.jpeg",
+      "../../../../public/assets/Landing/Images/SobreNosotros/FotosPerfil/Santiago_Friedrich.jpeg",
     linkedin: "https://www.linkedin.com/in/santiago-claros-friedrich/",
   },
 ];
