@@ -12,7 +12,9 @@ const RegistroLoginLayout = ({ children }) => {
         </Link>
       </header>
       <main>
-        <Outlet />
+        <div style="display: flex;">
+          <Outlet />
+        </div>
       </main>
     </>
   );
