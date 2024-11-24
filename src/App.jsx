@@ -21,11 +21,11 @@ const App = () => {
           <Route path="/porque_elegirnos" element={<PorqueElegirnos />} />
           <Route path="/ayuda" element={<Ayuda />} />
           
+        </Route>
           <Route element={<RegistroLoginLayout />}>
             <Route path="/registro" element={<Registro />} />
             <Route path="/login" element={<Login />} />
           </Route>
-        </Route>
       </Routes>
     </Router>
   );
