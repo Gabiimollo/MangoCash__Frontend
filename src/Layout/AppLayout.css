@@ -1,0 +1,20 @@
+/* Estilo general del layout */
+
+.layout {
+    display: flex;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+/* Sidebar (aside) */
+.sidebar-container {
+    width: 270px;
+    height: 100vh; /* Asegura que ocupe todo el alto */
+}
+
+/* Main */
+.main-content {
+    flex: 1; /* Ocupa el resto del espacio */
+    height: 100vh;
+    padding: 20px; /* Espaciado interno */
+    overflow-y: auto; /* Permite desplazamiento si el contenido es muy alto */
+}

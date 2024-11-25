@@ -1,10 +1,27 @@
-import React from 'react'
-import './SideMenu.css'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
+import './Sidemenu.css'; // Importamos el archivo CSS
 
-const SideMenu = () => {
+import LogoConNombre from '../../../../public/assets/Landing/logo-nombre.png'
+import DasboardIconMenu from '../../../../public/assets/App/SideMenu/dashboardIconMenu.png'
+
+const Sidemenu = () => {
+
   return (
-    <div>SideMenu</div>
-  )
-}
+    <>
+        <div className="sidebar-container">
+            <div className='sidebar-brand'>
+                <img className="sidebar-img" src={LogoConNombre} alt="" />
+            </div>
+            <div className='sidebar-link-container'>
+                <Link to={"/app/dashboard"} className='sidebar-item'>
+                    <img width="24px" src={DasboardIconMenu} alt="" />
+                    <li className='sidebar-item-text'>Dasboard</li>
+                </Link>
+            </div>
+        </div>
+    </>
+  );
+};
 
-export default SideMenu
+export default Sidemenu;

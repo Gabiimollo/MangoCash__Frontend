@@ -1,0 +1,55 @@
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.row-dashboard {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.card-dashboard {
+    width: 25%;
+    min-width: fit-content;
+    height: 150px; /* Para adaptarse al contenido dinámico */
+    min-height: 150px; /* Establece una altura mínima */
+    padding: 20px; /* Añade espacio interno */
+
+    background-color: #ffffffb3; /* Fondo translúcido */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque en el fondo */
+    border: 1px solid #aaadad66; /* Borde sutil */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px #0000001a; /* Sombra para profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones */
+}
+
+/* Efecto hover */
+.card-dashboard:hover {
+    transform: translateY(-5px); /* Sutil elevación al pasar el mouse */
+    box-shadow: 0 8px 16px #00000033; /* Sombra más fuerte */
+}
+
+.card-dashboard p {
+    padding: 45px 0px 0px 0px;
+    font-size: 250%
+}
+
+.card-dashboard h3 {
+    height: 20px;
+    font-size: 20px;
+}
+
+.--gastoCategoria {
+    width: 40%;
+    min-width: fit-content;
+    min-height: 300px;
+}
+
+.--balanceMensual{
+    width: 100%;
+    min-height: 400px;
+}
+
