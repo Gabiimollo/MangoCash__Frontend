@@ -13,7 +13,6 @@
 
 .card-dashboard {
     width: 25%;
-    min-width: fit-content;
     height: 150px; /* Para adaptarse al contenido dinámico */
     min-height: 150px; /* Establece una altura mínima */
     padding: 20px; /* Añade espacio interno */
@@ -52,4 +51,53 @@
     width: 100%;
     min-height: 400px;
 }
+/* Goals Cards */
 
+.--goals-card-container{
+    flex: 1;
+    max-width: 60%;
+
+    min-height: 300px;
+
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.--goals-card-container div {
+    display: flex;
+}
+
+.goal-card {
+    width: 300px;
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .goal-card h3 {
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .goal-progress {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .goal-details {
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  .goal-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Fin Goalds Cards */
