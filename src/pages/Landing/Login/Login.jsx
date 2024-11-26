@@ -33,8 +33,8 @@ function Login() {
     setShowLoader(true);
     
     try {
-      const response = await fetch('http://localhost:8080/api/v1/auth/login', {
-        method: 'POST',
+      const response = await fetch(`${FetchConstants.apiUrl}/auth/login`, {
+      method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
@@ -58,6 +58,7 @@ function Login() {
       navigate('/app/dashboard');
       
     } catch (error) {
+      console.log(error)
       toast.error('Hubo un problema al iniciar sesión. Verifica tus credenciales.');
       setStatus('error');
     } finally {
