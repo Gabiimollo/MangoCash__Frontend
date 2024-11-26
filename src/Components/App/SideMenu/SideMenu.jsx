@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
-import './Sidemenu.css'; // Importamos el archivo CSS
+import './SideMenu.css';
 
 import LogoConNombre from '../../../../public/assets/Landing/logo-nombre.png'
 import DasboardIconMenu from '../../../../public/assets/App/SideMenu/dashboardIconMenu.png'
