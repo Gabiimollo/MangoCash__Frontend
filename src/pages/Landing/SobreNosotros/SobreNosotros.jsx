@@ -11,19 +11,20 @@ import AccesoPNG from '../../../../public/assets/Landing/Images/SobreNosotros/Ac
 import GraduacionPNG from '../../../../public/assets/Landing/Images/SobreNosotros/Graduacion.png'
 import LinkedInPNG from '../../../../public/assets/Landing/Images/SobreNosotros/LinkedIn.png'
 
+import SantiagoFriedrichImg from '../../../../public/assets/Landing/Images/SobreNosotros/FotosPerfil/Santiago_Friedrich.jpeg'
+import GabrielMolloImg from '../../../../public/assets/Landing/Images/SobreNosotros/FotosPerfil/Gabriel_Mollo.jpg'
+
 const people = [
   {
     name: "Juan Gabriel Mollo",
     role: "Desarrollador Full Stack",
-    imageUrl:
-      "../../../../public/assets/Landing/Images/SobreNosotros/FotosPerfil/Gabriel_Mollo.jpg",
+    imageUrl: GabrielMolloImg,
     linkedin: "https://www.linkedin.com/in/juangabrielmollo/",
   },
   {
     name: "Santiago Friedrich",
     role: "Desarrollador Full Stack",
-    imageUrl:
-      "../../../../public/assets/Landing/Images/SobreNosotros/FotosPerfil/Santiago_Friedrich.jpeg",
+    imageUrl: SantiagoFriedrichImg,
     linkedin: "https://www.linkedin.com/in/santiago-claros-friedrich/",
   },
 ];
