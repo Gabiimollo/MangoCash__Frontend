@@ -49,3 +49,22 @@ li {
     align-items: center;
     height: 100vh;
 }
+
+*::-webkit-scrollbar {
+    width: 8px; /* Ancho de la scrollbar */
+    height: 8px; /* Alto de la scrollbar horizontal */
+}
+
+*::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ff8a00, #e52e71); /* Color degradado del thumb */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #e52e71, #ff8a00); /* Cambio de color al pasar el cursor */
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Fondo de la pista */
+    border-radius: 10px; /* Bordes redondeados */
+}
