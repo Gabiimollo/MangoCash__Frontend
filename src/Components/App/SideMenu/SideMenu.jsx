@@ -4,6 +4,7 @@ import './SideMenu.css';
 
 import LogoConNombre from '../../../../public/assets/Landing/logo-nombre.png'
 import DasboardIconMenu from '../../../../public/assets/App/SideMenu/dashboardIconMenu.png'
+import ObjetivosIcon from '../../../../public/assets/App/SideMenu/ObjetivoIcon.png'
 import CuentasTarjetasIconMenu from '../../../../public/assets/App/SideMenu/creditCardIconMenu.png'
 import TransaccionesIconMenu from '../../../../public/assets/App/SideMenu/transaccionesIconMenu.png'
 import FacturasIconMenu from '../../../../public/assets/App/SideMenu/facturasIconMenu.png'
@@ -22,6 +23,10 @@ const Sidemenu = () => {
                     <img width="24px" src={DasboardIconMenu} alt="" />
                     <li className='sidebar-item-text'>Dasboard</li>
                 </Link>
+                <Link to={"/app/objetivos"} className='sidebar-item'>
+                    <img width="24px" src={ObjetivosIcon} alt="" />
+                    <li className='sidebar-item-text'>Metas Financieras</li>
+                </Link>
                 <Link to={"/app/cuentas-tarjetas"} className='sidebar-item'>
                     <img width="24px" src={CuentasTarjetasIconMenu} alt="" />
                     <li className='sidebar-item-text'>Cuentas y Tarjetas</li>
@@ -37,6 +42,18 @@ const Sidemenu = () => {
                 <Link to={"/app/perfil"} className='sidebar-item'>
                     <img width="24px" src={UserProfile} alt="" />
                     <li className='sidebar-item-text'>Perfil</li>
+                </Link>
+            </div>
+            <div className="logout-item">
+                <Link to={"/login"} className='sidebar-item'>
+                    <img src="" alt="" />
+                    <li className='sidebar-item-text'>Salir</li>
+                </Link>
+            </div>
+            <div className="profile-item">
+                <Link to={"/login"} className='sidebar-item'>
+                    <img src="" alt="" />
+                    <li className='sidebar-item-text'></li>
                 </Link>
             </div>
         </div>
