@@ -54,14 +54,11 @@
     overflow: hidden;
     overflow-x: scroll;
 
-    background: var(--verde);
+    background: var(--verde)
 }
-
-
 
 .--goals-card-container div {
     display: flex;
-    justify-content: space-evenly;
 }
 
 .--goals-card-container h2 {
@@ -92,6 +89,13 @@
   .goal-details {
     font-size: 10px;
     text-align: center;
+  }
+  
+  .goal-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
   }
   
   /* Fin Goalds Cards */
