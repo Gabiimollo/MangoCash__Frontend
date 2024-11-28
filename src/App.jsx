@@ -12,6 +12,10 @@ import Registro from './pages/Landing/Registro/Registro';
 import Login from './pages/Landing/Login/Login';
 
 import Dashboard from './pages/App/Dashboard/Dashboard'
+import CuentasTarjetas from './pages/App/CuentasTarjetas/CuentasTarjetas';
+import Transacciones from './pages/App/Transacciones/Transacciones';
+import Perfil from './pages/App/Perfil/Perfil';
+import NotFound from './pages/App/NotFound/NotFound';
 
 const App = () => {
   return (
@@ -29,7 +33,11 @@ const App = () => {
         </Route>
         <Route element={<AppLayout />}>
           <Route path='/app/dashboard' element={<Dashboard />} />
+          <Route path='/app/cuentas-tarjetas' element={<CuentasTarjetas />} />
+          <Route path='/app/transacciones' element={<Transacciones />} />
+          <Route path='/app/perfil' element={<Perfil />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

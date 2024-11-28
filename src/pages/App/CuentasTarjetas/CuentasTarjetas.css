@@ -1,0 +1,34 @@
+  .seccion-cuentas,
+  .seccion-tarjetas {
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .lista-cuentas, .lista-tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .tarjeta-cuenta, .tarjeta-tarjeta {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tarjeta-cuenta h4, .tarjeta-tarjeta h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .tarjeta-cuenta p, .tarjeta-tarjeta p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
