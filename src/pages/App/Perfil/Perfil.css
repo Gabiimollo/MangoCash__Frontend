@@ -1,0 +1,58 @@
+/* Estilo principal del contenedor del perfil */
+.perfil-container {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.perfil-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Contenedor de la información del perfil */
+.perfil-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+/* Estilo de la imagen/avatar */
+.perfil-avatar {
+  margin-right: 30px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #2ccf6d;
+}
+
+/* Detalles del perfil */
+.perfil-details {
+  font-size: 1.2em;
+}
+
+.perfil-details h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.perfil-details p {
+  margin: 8px 0;
+}
+
+.perfil-details strong {
+  color: #2ccf6d;
+}

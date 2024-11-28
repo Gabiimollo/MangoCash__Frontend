@@ -1,0 +1,67 @@
+/* Estilo principal del contenedor de la lista de transacciones */
+.transacciones-container {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.transacciones-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Tabla */
+.transacciones-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Encabezado de la tabla */
+.transacciones-table th {
+  padding: 12px;
+  text-align: left;
+  background-color: #2ccf6d;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Celdas de la tabla */
+.transacciones-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para monto positivo y negativo */
+.negative {
+  color: #e74c3c; /* Rojo para los egresos */
+}
+
+.positive {
+  color: #2ccf6d; /* Verde para los ingresos */
+}
+
+/* Tipo de transacción (Ingreso / Egreso) */
+.income {
+  background-color: #2ccf6d;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.expense {
+  background-color: #e74c3c;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+}
