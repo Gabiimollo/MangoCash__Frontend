@@ -17,6 +17,7 @@ import Transacciones from './pages/App/Transacciones/Transacciones';
 import Facturas from './pages/App/Facturas/Facturas';
 import Perfil from './pages/App/Perfil/Perfil';
 import NotFound from './pages/App/NotFound/NotFound';
+import MetasFinancieras from './pages/App/MetasFinancieras/MetasFinancieras';
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
         </Route>
         <Route element={<AppLayout />}>
           <Route path='/app/dashboard' element={<Dashboard />} />
+          <Route path='/app/objetivos' element={<MetasFinancieras />} />
           <Route path='/app/cuentas-tarjetas' element={<CuentasTarjetas />} />
           <Route path='/app/transacciones' element={<Transacciones />} />
           <Route path='/app/facturas' element={<Facturas />} />
