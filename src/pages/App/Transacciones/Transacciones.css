@@ -1,6 +1,7 @@
 /* Estilo principal del contenedor de la lista de transacciones */
 .transacciones-container {
   padding: 30px;
+  height: calc(98vh - 30px);
   max-width: 1000px;
   margin: 0 auto;
   background-color: #f9f9f9;
@@ -17,6 +18,51 @@
   text-align: center;
 }
 
+/* Mini menu */ 
+
+.container-mini-menu{
+  display: flex;
+  flex-direction: column;
+}
+
+.mini-menu{
+    margin-top: 15px;
+    display: flex;
+    gap: 30px;
+    
+}
+
+.mini-menu .menu-option{
+    position: relative; /* Necesario para posicionar la línea */
+    padding: 6px 0px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: color 0.3s;
+    color: var(--negro);
+}
+
+.menu-option.active::after {
+    content: ""; /* Requiere contenido para mostrar */
+    position: absolute; /* Posiciona la línea */
+    left: 50%; /* Alinea la línea al centro */
+    bottom: -5px; /* Espacio entre el texto y la línea */
+    height: 3px; /* Altura de la línea */
+    width: 100%; /* Ajusta el ancho de la línea según sea necesario */
+    transform: translateX(-50%); /* Centra la línea horizontalmente */
+    background-color: #27b94bb8;  /* Color de la línea */
+}
+
+
+.menu-option:hover::after {
+    content: ""; /* Requiere contenido para mostrar */
+    position: absolute; /* Posiciona la línea */
+    left: 50%; /* Alinea la línea al centro */
+    bottom: -5px; /* Espacio entre el texto y la línea */
+    height: 3px; /* Altura de la línea */
+    width: 100%; /* Ajusta el ancho de la línea según sea necesario */
+    transform: translateX(-50%); /* Centra la línea horizontalmente */
+    background-color: #27b94c48; /* Color de la línea */
+}
+
 /* Tabla */
 .transacciones-table {
   width: 100%;
@@ -28,7 +74,7 @@
 .transacciones-table th {
   padding: 12px;
   text-align: left;
-  background-color: #2ccf6d;
+  background-color: #27b94bb8;
   color: #fff;
   font-weight: bold;
 }
@@ -46,22 +92,25 @@
 }
 
 .positive {
-  color: #2ccf6d; /* Verde para los ingresos */
+  color: #27b94bb8; /* Verde para los ingresos */
 }
 
 /* Tipo de transacción (Ingreso / Egreso) */
 .income {
-  background-color: #2ccf6d;
-  color: white;
+  color: #27b94bb8;
   padding: 6px 12px;
   border-radius: 20px;
   font-weight: bold;
 }
 
 .expense {
-  background-color: #e74c3c;
-  color: white;
+  color: #e74c3c;
   padding: 6px 12px;
   border-radius: 20px;
   font-weight: bold;
+}
+
+.edit-icon, .delete-icon{
+  width: 30px;
+  cursor: pointer;
 }
