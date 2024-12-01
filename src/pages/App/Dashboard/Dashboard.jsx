@@ -4,7 +4,7 @@ import './Dashboard.css'
 import InfoCards from './cards/InfoCards'
 import GastosPorCategoria from './cards/GastosPorCategoria'
 import BalanceMensual from './cards/BalanceMensual'
-import GoalCard from './cards/ObjetivosAhorroResumen';
+import MetasFinancieras from './cards/MetasFinancieras';
 
 
 const Dashboard = () => {
@@ -25,22 +25,7 @@ const Dashboard = () => {
       </div>
       <div className="row-dashboard">
         <GastosPorCategoria />
-
-      <div className="card-dashboard --goals-card-container">
-        <h2>Mis Metas Financieras</h2>
-        <div>
-          {goals.map((goal, index) => (
-              <GoalCard
-                key={index}
-                goalName={goal.name}
-                targetAmount={goal.target}
-                currentAmount={goal.current}
-              />
-            ))}
-        </div>
-
-      </div>
-
+        <MetasFinancieras />
       </div>
       <div className="row-dashboard">
         <BalanceMensual />

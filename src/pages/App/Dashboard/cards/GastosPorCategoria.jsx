@@ -17,14 +17,6 @@ const GastosPorCategoria = () => {
           },
         },
         labels: ['Comida', 'Transporte', 'Ocio', 'Renta', 'Servicios'],  // Etiquetas de cada segmento
-        plotOptions: {
-          pie: {
-            donut: {
-              size: '60%',  // Tamaño del agujero si es gráfico tipo donut
-            },
-            expandOnClick: true,  // Expande el gráfico al hacer clic
-          },
-        },
         stroke: {
           show: false,  // Desactivar los bordes entre las porciones
         },
@@ -70,7 +62,6 @@ const GastosPorCategoria = () => {
         options={data.options}
         series={data.series}
         type="pie"
-        width="100%"
         height={"100%"}
       />
     </div>

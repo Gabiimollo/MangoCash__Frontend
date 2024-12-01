@@ -24,13 +24,23 @@
 }
 
 .card-dashboard p {
-    padding: 45px 0px 0px 0px;
-    font-size: 250%
+    padding: 35px 0px 0px 0px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.--infoCards div {
+    display: flex;
+    justify-content: space-between;
 }
 
 .card-dashboard h3 {
     height: 20px;
     font-size: 20px;
+}
+
+.card-dashboard div img {
+    height: 40px;
 }
 
 .--gastoCategoria {
@@ -43,59 +53,88 @@
     width: 100%;
     min-height: 400px;
 }
-/* Goals Cards */
 
-.--goals-card-container{
-    flex: 1;
+.--metasFinancieras {
+    width: 60%;
     max-width: 60%;
-
     min-height: 300px;
 
     overflow: hidden;
-    overflow-x: scroll;
-
-    background: var(--verde)
 }
 
-.--goals-card-container div {
+.metas-container {
+    width: 100%;
+    height: 250px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 20px;
+    overflow-x: scroll;
 }
 
-.--goals-card-container h2 {
-    color: #fff;
-}
+.metas-resumenCard {
+    width: 240px;
+    height: 235px;
+    padding: 10px 25px;
 
-.goal-card {
-    width: 300px;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.169);
+    box-shadow: 2px 2px 5px #00000018;
+    border-radius: 25px;
+    border: 1px solid #cccbcb;
+
     display: flex;
     flex-direction: column;
-    background: #fff
-  }
-  
-  .goal-card h3 {
-    font-size: 12px;
-    text-align: center;
-  }
-  
-  .goal-progress {
+    align-items: start;
+    justify-content: end
+}
+
+.metas-resumenCard h4 {
+    font-size: x-large;
+    font-weight: bold;
+    color: black;
+    padding: 36px 0px;
+}
+
+.metas-resumenCard div:first-child {
     display: flex;
-    justify-content: center;
-  }
-  
-  .goal-details {
-    font-size: 10px;
-    text-align: center;
-  }
-  
-  .goal-cards {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.metas-resumenCard div img {
+    height: 40px;
+}
+
+.metas-resumenCard div p {
+    padding: 5px 0px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.metas-resumenCard div p:first-child {
+    color: grey;
+    font-size: large;
+}
+
+.metas-resumenCard div div {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  /* Fin Goalds Cards */
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.metas-resumenCard div div p:first-child {
+    padding: 5px 0px;
+    font-size: xx-large;
+    font-weight: bold;
+    color: black;
+}
+
+.metas-resumenCard div div p:last-child {
+    color: grey;
+    font-size: 20px;
+    font-weight: 500;
+    align-self: center;
+}
