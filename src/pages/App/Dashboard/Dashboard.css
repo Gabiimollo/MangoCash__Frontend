@@ -74,25 +74,26 @@
 }
 
 .metas-resumenCard {
-    width: 240px;
-    height: 235px;
-    padding: 10px 25px;
+    width: fit-content;
+    min-width: 230px;
+    height: 230px;
+    padding: 15px 25px 6px 25px;
 
     box-shadow: 2px 2px 5px #00000018;
     border-radius: 25px;
     border: 1px solid #cccbcb;
 
+
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: end
+    justify-content: space-between
 }
 
 .metas-resumenCard h4 {
-    font-size: x-large;
+    font-size: 20px;
     font-weight: bold;
     color: black;
-    padding: 36px 0px;
 }
 
 .metas-resumenCard div:first-child {
@@ -109,7 +110,7 @@
 
 .metas-resumenCard div p {
     padding: 5px 0px;
-    font-size: xx-large;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -118,23 +119,16 @@
     font-size: large;
 }
 
-.metas-resumenCard div div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 5px;
-}
-
 .metas-resumenCard div div p:first-child {
     padding: 5px 0px;
-    font-size: xx-large;
+    font-size: 25px;
     font-weight: bold;
     color: black;
 }
 
 .metas-resumenCard div div p:last-child {
     color: grey;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     align-self: center;
 }

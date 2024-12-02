@@ -5,18 +5,13 @@ import ApexCharts from 'react-apexcharts';
 const GastosPorCategoria = () => {
 
     const data = {
-      series: [30, 40, 35, 50, 40],  // Los datos de cada categoría (puedes adaptarlos)
+      series: [200000, 60000, 35000, 450000, 40000],  // Los datos de cada categoría (puedes adaptarlos)
       options: {
         chart: {
           type: 'pie',  // Tipo de gráfico: torta
           width: '100%',  // Asegura que el gráfico ocupe el 100% del contenedor
-          animations: {
-            enabled: true,  // Habilitar animaciones
-            easing: 'easeinout',  // Tipo de animación
-            speed: 800,  // Velocidad de la animación
-          },
         },
-        labels: ['Comida', 'Transporte', 'Ocio', 'Renta', 'Servicios'],  // Etiquetas de cada segmento
+        labels: ['Comida', 'Transporte', 'Ocio', 'Alquiler', 'Servicios'],  // Etiquetas de cada segmento
         stroke: {
           show: false,  // Desactivar los bordes entre las porciones
         },
@@ -32,25 +27,23 @@ const GastosPorCategoria = () => {
         legend: {
           position: 'left',  // Posición de la leyenda
           horizontalAlign: 'center',
-          offsetY: 50,
+          offsetY: 60,
           labels: {
             useSeriesColors: true,  // Usa los colores de cada serie para la leyenda
           },
         },
         tooltip: {
-          theme: 'light',  // Tema del tooltip
-          followCursor: true,  // Tooltip sigue al cursor
-          fillSeriesColor: true,  // Utiliza el color de la serie en el tooltip
           style: {
-            fontSize: '12px',
+            fontSize: '14px',
             fontWeight: 'bold',
+            colors: '#fff'
           },
         },
         colors: [
           '#2a9d90', 
           '#f4a462',
-          '#e8c468', 
           '#274754', 
+          '#e8c468', 
           '#e76e50', 
         ]
       },
@@ -62,7 +55,7 @@ const GastosPorCategoria = () => {
         options={data.options}
         series={data.series}
         type="pie"
-        height={"100%"}
+        height={"280px"}
       />
     </div>
   )

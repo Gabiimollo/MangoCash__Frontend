@@ -20,9 +20,14 @@ li {
     list-style: none;
 }
 
+h2 {
+    font-size: var(--f_size_h2);
+    font-weight: bold;
+}
+
 :root {
     --f_size_h1: 30px;
-    --f_size_h2: 20px;
+    --f_size_h2: 25px;
     --f_size_p: 16px;
 
     --f_weight_titulos: 500;

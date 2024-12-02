@@ -1,8 +1,7 @@
 /* Estilo principal del contenedor de la lista de transacciones */
 .transacciones-container {
   padding: 30px;
-  height: calc(98vh - 30px);
-  max-width: 1000px;
+  height: calc(100vh - 50px);
   margin: 0 auto;
   background-color: #f9f9f9;
   border-radius: 8px;
@@ -114,3 +113,6 @@
   width: 30px;
   cursor: pointer;
 }
+
+
+
