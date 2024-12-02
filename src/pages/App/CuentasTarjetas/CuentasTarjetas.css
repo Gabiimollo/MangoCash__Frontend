@@ -5,10 +5,6 @@
   flex-direction: column;
 }
 
-h2 {
-  text-align: center;
-}
-
 .cards-cuentas{
   display: flex;
 }
