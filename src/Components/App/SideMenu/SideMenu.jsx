@@ -4,7 +4,7 @@ import './SideMenu.css';
 
 import LogoConNombre from '../../../../public/assets/Landing/logo-nombre.png'
 import DasboardIconMenu from '../../../../public/assets/App/SideMenu/dashboardIconMenu.png'
-import ObjetivosIcon from '../../../../public/assets/App/SideMenu/ObjetivoIcon.png'
+import ObjetivosIcon from '../../../../public/assets/App/SideMenu/objetivoIcon.png'
 import CuentasTarjetasIconMenu from '../../../../public/assets/App/SideMenu/creditCardIconMenu.png'
 import TransaccionesIconMenu from '../../../../public/assets/App/SideMenu/transaccionesIconMenu.png'
 import FacturasIconMenu from '../../../../public/assets/App/SideMenu/facturasIconMenu.png'
