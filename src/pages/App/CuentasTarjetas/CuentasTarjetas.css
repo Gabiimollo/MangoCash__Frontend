@@ -1,34 +1,130 @@
-  .seccion-cuentas,
-  .seccion-tarjetas {
-    margin-bottom: 20px;
-  }
+.seccion-cuentas,
+.seccion-tarjetas {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+}
+
+.cards-cuentas{
+  display: flex;
+}
   
-  h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
+ .--cardCuentas{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px 20px 0px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+ }
+
+ .crearCuentas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .add-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+ }
+
+ .add-container:hover{
+  opacity: 0.5;
+ }
+
+ .add-icon{
+  width: 40px;
+  height: 40px;
+  margin-bottom: -20px;
+ }
+
+ .crearCuentas p{
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+ }
+
+.cuentasCreadas{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px 20px 0px;
+  justify-content: center;
+}
+
+.cuentasCreadas h4{
+  font-size: 20px;
   
-  .lista-cuentas, .lista-tarjetas {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .tarjeta-cuenta, .tarjeta-tarjeta {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .tarjeta-cuenta h4, .tarjeta-tarjeta h4 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #333;
-  }
-  
-  .tarjeta-cuenta p, .tarjeta-tarjeta p {
-    margin: 5px 0;
-    color: #555;
-  }
-  
+}
+
+.cuentasCreadas p{
+  font-size: 18px;
+}
+
+.cuentasCreadas p span{
+  font-weight: bold;
+  color: rgb(1, 182, 1);
+}
+
+ /* Tarjetas */
+
+.cards-tarjetas{
+  display: flex;
+}
+
+.--cardTarjetas{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px 20px 0px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.crearTarjetas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.crearTarjetas p{
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+ }
+
+ .tarjetasCreadas{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px 20px 0px;
+  justify-content: center;
+  color: white;
+}
+
+.tarjetasCreadas h4{
+  font-size: 20px;
+  color: black;
+}
+
+.tarjetasCreadas p{
+  font-size: 18px;
+  margin-bottom: -10px;
+  margin-top: -10px;
+}
+
+.tarjetasCreadas p span{
+  font-weight: bold;
+  color: rgb(1, 182, 1);
+}
