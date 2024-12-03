@@ -25,7 +25,7 @@ const Sidemenu = () => {
                 <div className='sidebar-links-div'>
                     <Link to={"/app/dashboard"} className='sidebar-item'>
                         <img width="24px" src={DasboardIconMenu} alt="" />
-                        <li className='sidebar-item-text'>Dasboard</li>
+                        <li className='sidebar-item-text'>Dashboard</li>
                     </Link>
                     <Link to={"/app/objetivos"} className='sidebar-item'>
                         <img width="24px" src={ObjetivosIcon} alt="" />
