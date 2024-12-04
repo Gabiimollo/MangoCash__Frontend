@@ -1,5 +1,6 @@
 import React from 'react';
 import './Facturas.css';
+import AddSvg from '../../../../public/assets/App/agregar.png'
 
 const Facturas = () => {
   const facturasData = [
@@ -16,7 +17,11 @@ const Facturas = () => {
 
   return (
     <div className="facturasContainer">
-      <h2>Facturas</h2>
+      <div className='facturas'>
+        <h2>Facturas</h2>
+        <img src={AddSvg} className='add-icon' alt="add-icon" />
+      </div>
+      
       <div className="facturasRowContainer">
         {facturasData.map((factura) => (
           <div className={`factura ${factura.estado === 'Pendiente' ? 'pendiente' : 'pagada'}`} key={factura.id}>

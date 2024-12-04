@@ -32,7 +32,7 @@ const CuentasTarjetas = () => {
             <div className="card-dashboard --cardCuentas crearCuentas">
 
               <div className='add-container'>
-                <img src={addSvg} alt="add" className='add-icon' />
+                <img src={addSvg} alt="add" className='add-icon-cuentas' />
                 <p>Nueva Cuenta</p>
               </div>
               
@@ -57,7 +57,7 @@ const CuentasTarjetas = () => {
           <div className='card-dashboard --cardTarjetas crearTarjetas'>
 
             <div className='add-container'>
-                <img src={addSvg} alt="add" className='add-icon' />
+                <img src={addSvg} alt="add" className='add-icon-cuentas' />
                 <p>Nueva Tarjeta</p>
               </div>
               

@@ -13,8 +13,7 @@ import LinkedInPNG from '../../../../public/assets/Landing/Images/SobreNosotros/
 
 import SantiagoFriedrichImg from '../../../../public/assets/Landing/Images/SobreNosotros/FotosPerfil/Santiago_Friedrich.jpeg'
 import GabrielMolloImg from '../../../../public/assets/Landing/Images/SobreNosotros/FotosPerfil/Gabriel_Mollo.jpg'
-import ValentinaRomeroImg from '../../../../public/assets/Landing/Images/SobreNosotros/FotosPerfil/valen.png'
-import LuciaSchiroImg from '../../../../public/assets/Landing/Images/SobreNosotros/FotosPerfil/Lucia_shiro.jpg'
+
 
 const people = [
   {
@@ -28,18 +27,6 @@ const people = [
     role: "Desarrollador Full Stack",
     imageUrl: SantiagoFriedrichImg,
     linkedin: "https://www.linkedin.com/in/santiago-claros-friedrich/",
-  },
-  {
-    name: "Valentina Romero",
-    role: "Tester - UX/UI",
-    imageUrl: ValentinaRomeroImg,
-    linkedin: "https://www.linkedin.com/in/valentinaromero2003/"
-  },
-  {
-    name: "Lucia Schiro",
-    role: "UX/UI",
-    imageUrl: LuciaSchiroImg,
-    linkedin: "https://www.linkedin.com/in/lucia-schiro-23b56b236/"
   }
 ];
 

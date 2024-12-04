@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './Transacciones.css'; // Asegúrate de importar el archivo CSS
 import EditSvg from '../../../../public/assets/App/Transactions/edit.png'
 import DeleteSvg from '../../../../public/assets/App/Transactions/delete.png'
+import AddSvg from '../../../../public/assets/App/agregar.png'
 
 const Transacciones = () => {
 
@@ -23,7 +24,11 @@ const Transacciones = () => {
 
   return (
     <div className="transacciones-container">
-      <h2 >Transacciones</h2>
+      <div className='transacciones'>
+        <h2 >Transacciones</h2>
+        <img src={AddSvg} className='add-icon' alt="add-icon" />
+      </div>
+      
 
       <div className='container-mini-menu'>
         <ul className='mini-menu'>

@@ -72,3 +72,8 @@ border-radius: 10px; /* Bordes redondeados para el progreso */
     padding: 20px 0px 0px 0px;
 }
   
+.metas{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}

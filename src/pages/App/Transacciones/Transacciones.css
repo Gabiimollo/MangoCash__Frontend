@@ -114,5 +114,16 @@
   cursor: pointer;
 }
 
+.transacciones{
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
 
+.add-icon{
+  width: 28px;
+  height: 30px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
 

@@ -1,5 +1,7 @@
 import React from "react";
 import "./MetasFinancieras.css";
+import AddSvg from '../../../../public/assets/App/agregar.png'
+
 
 const MetasFinancieras = () => {
   const metasFinancieras = [
@@ -20,7 +22,11 @@ const MetasFinancieras = () => {
 
   return (
     <div className="metasFinancieras-container">
-    <h2>Metas y Objetivos</h2>
+      <div className="metas">
+        <h2>Metas y Objetivos</h2>
+        <img src={AddSvg} className="add-icon" alt="add-icon" />
+      </div>
+    
 
           <div className="card-container-metas">
           {metasFinancieras.map((meta) => {

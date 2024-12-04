@@ -59,3 +59,13 @@
   color: #333;
   margin-bottom: 10px;
 }
+
+.facturas{
+  display: flex;
+  align-items: self-start;
+  gap: 10px;
+}
+
+.add-icon:hover{
+  opacity: 0.5;
+}
